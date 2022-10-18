@@ -6,13 +6,18 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
-const routes: Routes = []
+const routes: Routes = [
+  { path: '', component: AdminloginComponent },
+  
+]
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminloginComponent
   ],
   imports: [
     BrowserModule,
