@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewstudentComponent } from './viewstudent/viewstudent.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FacultyComponent } from './faculty-view/faculty.component';
+import { AddFacultyComponent } from './add-faculty/add-faculty.component';
 
 const routes: Routes = [
   { path: '', component: AdminloginComponent },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'addstudent', component: AddstudentComponent },
   { path: 'viewstudent', component: ViewstudentComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'facultyview', component: FacultyComponent },
+  { path: 'addfaculty', component: AddFacultyComponent }
   
   
 ]
@@ -30,7 +34,9 @@ const routes: Routes = [
     NavbarComponent,
     AddstudentComponent,
     ViewstudentComponent,
-    DashboardComponent
+    DashboardComponent,
+    FacultyComponent,
+    AddFacultyComponent
   ],
   imports: [
     BrowserModule,

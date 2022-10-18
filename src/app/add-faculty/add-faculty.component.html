@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                   
+                    <input type="text" placeholder="Username" class="form-control" name="Name"  [(ngModel)]="Name">
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    department dropdown
+                    <select name="department" id="" class="form-control"  [(ngModel)]="department">
+                        <option value="">select department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                    </select>
+
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <input type="date" placeholder="dob" class="form-control" name="dob"  [(ngModel)]="dob">
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <input type="text" placeholder="qualification" class="form-control" name="qualification"  [(ngModel)]="qualification">
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <input type="number" placeholder="mobile" class="form-control" name="mobile"  [(ngModel)]="mobile">
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <input type="date" placeholder="date of joining" class="form-control" name="doj"  [(ngModel)]="doj">
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button" (click)="readvalues()">Register</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

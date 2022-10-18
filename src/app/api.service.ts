@@ -11,4 +11,7 @@ export class ApiService {
   getAllStudents = () => {
     return this.http.get('http://localhost:3000/students')
   }
+  getallfaculty = () => {
+    return this.http.get('http://localhost:3000/faculty')
+  }
 }

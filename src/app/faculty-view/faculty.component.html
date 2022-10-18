@@ -8,36 +8,29 @@
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
-                        <th scope="col">RollNo</th>
-                        <th scope="col">AdmissionNo</th>
-
+                        <th scope="col">Designation</th>
+                        <th scope="col">Educational Qualifications</th>
                         <th scope="col">Department</th>
-                        <th scope="col">College</th>
                         <th scope="col">DOB</th>
+                        <th scope="col">DOJ</th>
                         <th scope="col">Address</th>
-                        <th scope="col">Parent Name</th>
-                        <th scope="col">Parent Mobile</th>
-                        <th scope="col">Blood Group</th>
-
+                        <th scope="col">Mobile</th>
 
 
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="table-primary" *ngFor="let i of studentData">
+                    <tr class="table-warning" *ngFor="let i of facultydata">
 
 
                         <td>{{i.Name}}</td>
-                        <td>{{i.RollNo}}</td>
-                        <td>{{i.AdmissionNo}}</td>
-
+                        <td>{{i.Designation}}</td>
+                        <td>{{i.Educational}}</td>
                         <td>{{i.Department}}</td>
-                        <td>{{i.College}}</td>
                         <td>{{i.DOB}}</td>
+                        <td>{{i.DOJ}}</td>
                         <td>{{i.Address}}</td>
-                        <td>{{i.ParentName}}</td>
                         <td>{{i.Mobile}}</td>
-                        <td>{{i.Blood}}</td>
 
                     </tr>
                 </tbody>
