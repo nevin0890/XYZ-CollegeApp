@@ -8,10 +8,17 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddstudentComponent } from './addstudent/addstudent.component';
+import { ViewstudentComponent } from './viewstudent/viewstudent.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', component: AdminloginComponent },
-  { path: 'dashboard', component: NavbarComponent }
+  
+  { path: 'addstudent', component: AddstudentComponent },
+  { path: 'viewstudent', component: ViewstudentComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  
   
 ]
 
@@ -20,7 +27,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AdminloginComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddstudentComponent,
+    ViewstudentComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
